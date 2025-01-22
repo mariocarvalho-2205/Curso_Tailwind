@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <header class="container p-4 mx-auto">
+      <nav class="flex justify-between">
+        <a class="underline text-blue-600 hover:text-blue-800" href="/"
+          >Marca</a
+        >
+        <ul class="flex gap-6">
+          <li>
+            <a class="text-blue-600 hover:text-blue-800 p-2" href="/">Sobre</a>
+          </li>
+          <li>
+            <a class="text-blue-600 hover:text-blue-800 p-2" href="/"
+              >Produtos</a
+            >
+          </li>
+          <li>
+            <a class="text-blue-600 hover:text-blue-800 p-2" href="/"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container p-4 mx-auto">
+      <div class="border border-gray-300 p-4 rounded-md w-72">
+        <div>
+          <h5 class="text-2xl mb-2">Bicicleta</h5>
+          <p class="mb-4">Bicicleta elétrica - R$ 5.000</p>
+          <a
+            class="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded-md inline-block md:text-2xl"
+            href="#"
+            >Comprar</a
+          >
+        </div>
+      </div>
+    </section>
+    <button
+      style="
+        color: white;
+        background-color: #2563eb;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+      "
+    >
+      Comprar
+    </button>
+  </body>
+</html>

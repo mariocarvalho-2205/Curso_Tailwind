@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Flex</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+     <h1 class="text-red-700 text-center text-lg font-semibold">Flex</h1>
+     <ul class=" flex p-2  flex-wrap gap-2 *:rounded *:p-2 *:text-center">
+        <li class="bg-slate-500 grow">HTML</li>
+        <li class="bg-red-600 ">CSS</li>
+        <li class="bg-orange-500 grow ">JavaScript</li>
+        <li class="bg-yellow-500 w-96 shrink-0">React</li>
+        <li class="bg-lime-500 ">PHP</li>
+     </ul>
+</body>
+</html>

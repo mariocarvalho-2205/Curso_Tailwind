@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Display</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+    <h1 class="text-red-700 font-bold">Tailwind CSS - Display</h1>
+    <!-- <a href="" class="bg-red-800 py-4 px-5 inline-block">Entrar</a>
+    <a href="" class="bg-red-800 py-4 px-5 block">Sair</a>
+    <a href="" class="bg-red-800 py-4 px-5 inline-block">saiba mais</a> -->
+
+    <!-- 
+    sr-only e not-sr-only
+
+É uma classe utilitária que esconde o elemento da tela, mas mantém ele disponível para leitores de tela.
+
+Exemplo
+
+<a href="#principal" class="sr-only focus:not-sr-only">Pular para o conteúdo</a>
+<nav>
+  <ul class="mb-96 flex gap-4">
+    <li><a href="/">Produtos</a></li>
+    <li><a href="/">Sobre</a></li>
+    <li><a href="/">Contato</a></li>
+  </ul>
+</nav>
+
+<main id="principal">
+  <h1>Notebooks e Smartphones</h1>
+</main>
+    -->
+    <nav>
+        <button id="menuButton" class="bg-purple-500 px-4 py-2">Menu</button>
+
+        <ul id="menu" class="hidden">
+            <li>produtos</li>
+            <li>Contato</li>
+            <li>Sobre</li>
+        </ul>
+        <p>conteudo</p>
+    </nav>
+    <script>
+        menuButton?.addEventListener('click', () => {
+            menu?.classList.toggle('invisible')
+        })
+    </script>
+</body>
+
+</html>

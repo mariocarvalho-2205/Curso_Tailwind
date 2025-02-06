@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Position</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <!-- <h1 class="text-red-700 font-bold">Position CSS</h1> -->
+     <div class="m-4">
+         <nav class="flex justify-between sticky bg-gray-500 p-4 top-0 rounded-2xl">
+             <a href="/">Floresta</a>
+             <ul class="flex gap-4">
+                 <li><a href="/">Produtos</a></li>
+                 <li><a href="/">Sobre</a></li>
+                 <li><a href="/">Contato</a></li>
+             </ul>
+         </nav>
+         <div class="flex gap-4">
+     
+             <div class="size-20 rounded bg-lime-900 relative">
+                 <div class="bg-lime-300 h-3 w-12 rounded-full absolute top-8 -right-8 border-lime-950 border"></div>
+             </div>
+             <div class="size-20 rounded bg-lime-900 "></div>
+         </div>
+     </div>
+     <div class="bg-black/50 absolute inset-0">
+    <p class="my-96 h-96 mx-4">Conteudo da pagina</p>
+</body>
+
+</html>

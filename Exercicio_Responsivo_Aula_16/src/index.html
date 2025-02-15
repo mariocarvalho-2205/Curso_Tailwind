@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Exercicio Responsivo</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+        <!-- 
+    O Tailwind possui modificadores que aplicam as propriedades de acordo com o media querie.
+    Ele é Mobile First, logo uma propriedade md:text-4xl será aplicada quando a tela for maior que 768px já text-2xl será aplicado em qualquer tamanho de tela.
+    Breakpoints nativos, aplicam o @media (min-width: px):
+
+    sm: 640px
+    md: 768px
+    lg: 1024px
+    xl: 1280px
+    2xl: 1536px
+
+    max-
+    É possível também usar o modificador max-md: para aplicar os estilos quando a tela for menor que md (768px).
+
+    Tamanhos disponíveis: sm, md, lg, xl, 2xl.
+    
+    -->
+    
+    <h1 class="text-center">Tailwind CSS - Exercicio Responsivo</h1>
+    <section class="bg-green-950  p-4 md:p-8 rounded-2xl">
+        <p class="uppercase text-center text-lime-300 text-2xl mb-4 tracking-widest">Conect-se com a natureza</p>
+        <h2 class="capitalize text-white font-serif text-center text-3xl md:text-6xl mb-6 md:mb-8 mx-auto max-w-3xl">Cada som, Cada momento, uma nova descoberta</h2>
+  
+        <div class="grid grid-col md:flex-row sm:grid-cols-2 gap-4 md:gap-8 mx-auto max-w-screen-xl">
+            <div class="bg-lime-900 p-4 md:p-6 rounded-2xl grid gap-3 md:gap-4 justify-center">
+                <h3 class="text-lime-300 font-serif text-3xl text-center sm:text-left">Lua Nova</h3>
+                <div>
+                    <p class="text-white text-5xl font-serif text-center sm:text-left">23</p>
+                    <p class="text-white font-sans text-2xl text-center sm:text-left">Março 2049</p>
+                </div>
+                <p class="text-xl text-lime-300 text-balance text-center sm:text-left">Melhor periodo para observação astronomica. O Céu estará claro e as estrelas.</p>
+                <a href="/" class="font-semibold py-2 px-6 justify-self-center sm:justify-self-start text-white bg-green-950 rounded-full ">Reservar 23/03</a>
+            </div>
+
+            <div class="bg-lime-900 rounded-2xl p-6 grid gap-4">
+                <h3 class="text-lime-300 font-serif text-3xl text-center sm:text-left">Aurora Boreal</h3>
+                <div>
+                    <p class="text-white text-5xl font-serif text-center sm:text-left">15</p>
+                    <p class="text-white font-sans text-2xl text-center sm:text-left">Abril 2049</p>
+                </div>
+                <p class="text-xl text-lime-300 text-balance text-center sm:text-left">Melhor periodo para observação da Aurora Boreal. O Céu estará iluminnado pelas estrelas.</p>
+                <a href="/" class="font-semibold py-2 px-6 justify-self-center sm:justify-self-start text-white bg-green-950 rounded-full ">Reservar 15/04</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

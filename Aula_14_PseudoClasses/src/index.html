@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Pseudo Classes</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="m-8">
+    <h1 class="text-blue-600 font-bold text-center">Tailwind CSS - Pseudo Classes</h1>
+    <button
+        class="text-red-600 bg-red-400 px-8 py-4 rounded-2xl hover:bg-red-300 active:bg-red-800 active:text-white">Enviar</button>
+    <div class="mt-4">
+        <input type="text"
+            class="border-2 border-gray-200 bg-gray-300 rounded focus:outline-yellow-400 placeholder:text-blue-500 placeholder:pl-4"
+            placeholder="nome">
+        <button
+            class="text-red-600 bg-red-400 px-8 py-4 rounded-2xl  disabled:grayscale hover:disabled" disabled>Enviar</button>
+
+    </div>
+    <div>
+        <ol class="list-disc">
+            <li class="odd:text-red-500 even:text-green-500 first:bg-purple-500 last:bg-orange-500 py-1">Teste</li>
+            <li class="odd:text-red-500 even:text-green-500 first:bg-purple-500 last:bg-orange-500 py-1">Prova</li>
+            <li class="odd:text-red-500 even:text-green-500 first:bg-purple-500 last:bg-orange-500 py-1">Estagio</li>
+            <li class="odd:text-red-500 even:text-green-500 first:bg-purple-500 last:bg-orange-500 py-1">Trabalho</li>
+            <li class="odd:text-red-500 even:text-green-500 first:bg-purple-500 last:bg-orange-500 py-1">Trabalho</li>
+            <li class="odd:text-red-500 even:text-green-500 first:bg-purple-500 last:bg-orange-500 py-1">Trabalho</li>
+        </ol>
+        <ul class="mt-4 odd:*:text-red-500 even:*:text-green-500 first:*:bg-purple-500 last:*:bg-orange-500 *:py-1">
+            <li >Teste</li>
+            <li >Prova</li>
+            <li >Estagio</li>
+            <li >Trabalho</li>
+        </ul>
+    </div>
+</body>
+
+</html>

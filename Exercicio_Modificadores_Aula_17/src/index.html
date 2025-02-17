@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Modificadores / Exercicio</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="m-8">
+    <h1 class="text-center">Tailwind CSS - Modificadores / Exercicio</h1>
+
+    <div class="grid gap-4 mt-8 max-w-lg mx-auto">
+
+
+        <h2 class="uppercase tracking-wide font-bold">Escolha a sua</h2>
+
+        <div>
+
+            <input type="radio" value="nimbus" name="produto" id="nimbus" class="mr-1 peer" />
+            <label for="nimbus" class="inline-grid grid-cols-[200px_auto] bg-slate-200 cursor-pointer peer-checked:bg-slate-400
+                 hover:bg-slate-300 p-2 rounded-md mb-2">Nimbus
+                <span>R$ 4999</span>
+            </label>
+            <ul class="bg-slate-200 rounded-md p-2 ml-5 peer-checked:block hidden">
+                <li>Motor Eletrico</li>
+                <li>Fibra de Carbono</li>
+                <li>50 km/h</li>
+                <li>Rastreador</li>
+            </ul>
+        </div>
+        <div>
+
+            <input type="radio" value="magic" name="produto" id="magic" class="mr-1 peer" />
+            <label for="magic" class="inline-grid grid-cols-[200px_auto] bg-slate-200 cursor-pointer peer-checked:bg-slate-400
+                 hover:bg-slate-300 p-2 rounded-md mb-2">Magic Might
+                <span>R$ 2499</span>
+            </label>
+            <ul class="bg-slate-200 rounded-md p-2 ml-5 peer-checked:block hidden">
+                <li>Motor Eletrico</li>
+                <li>Fibra de Carbono</li>
+                <li>45 km/h</li>
+                <li>Rastreador</li>
+            </ul>
+        </div>
+        <div>
+
+            <input type="radio" value="nebula" name="produto" id="nebula" class="mr-1 peer" />
+            <label for="nebula" class="inline-grid grid-cols-[200px_auto] bg-slate-200 cursor-pointer peer-checked:bg-slate-400
+                 hover:bg-slate-300 p-2 rounded-md mb-2">Nebula Cosmic
+                <span>R$ 3999</span>
+            </label>
+            <ul class="bg-slate-200 rounded-md p-2 ml-5 peer-checked:block hidden">
+                <li>Motor Eletrico</li>
+                <li>Fibra de Carbono</li>
+                <li>40 km/h</li>
+                <li>Rastreador</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

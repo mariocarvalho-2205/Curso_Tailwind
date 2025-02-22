@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+para criar uma classe e reutilizar ela em outros elementos utilizamos @layer components 
+dessa forma escrevemos css padrão.
+para continuar escrevendo o taiwilnd utilizamos o @apply e escrevenos em tailwind normal
+*/
+@layer components {
+    .btn {
+        @apply px-6 py-2 bg-green-300 rounded-2xl
+    }
+}

@@ -1,100 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forest</title>
-    <link rel="stylesheet" href="output.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forest</title>
+  <link rel="stylesheet" href="output.css" />
 </head>
 <!-- ! remover o mb-96 do body -->
+
 <body class="bg-verde-800 font-sans mb-96">
-    <!-- Calendario e Clima -->
-    <div class="container mt-4 flex justify-center md:justify-start">
-        <div class="inline-flex items-center rounded-md bg-verde-900">
-            <span class="size-2 bg-verde-300 block rounded-full relative -left-1"></span>
-            <div class="flex text-verde-300 divide-x-2 divide-verde-800">
-                <div class="px-4 py-2 capitalize" id="dia">Segunda</div>
-                <div class="px-4 py-2" id="temperatura">25º</div>
-                <div class="px-4 py-2" id="tempo">☀️⛅</div>
-            </div>
+  <!-- Calendario e Clima -->
+  <div class="container mt-4 flex justify-center md:justify-start">
+    <div class="inline-flex items-center rounded-md bg-verde-900">
+      <span class="size-2 bg-verde-300 block rounded-full relative -left-1"></span>
+      <div class="flex text-verde-300 divide-x-2 divide-verde-800">
+        <div class="px-4 py-2 capitalize" id="dia">Segunda</div>
+        <div class="px-4 py-2" id="temperatura">25º</div>
+        <div class="px-4 py-2" id="tempo">☀️⛅</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <header class="container flex justify-between gap-8 py-8 items-center">
+    <a href="./">
+      <img src="./img/forest.svg" alt="Forest" />
+    </a>
+    <nav>
+      <ul class="flex flex-wrap text-white text-xl gap-8">
+        <li>
+          <a class="hover:underline hover:underline-offset-8" href="#acomodacoes">Acomodações</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:underline-offset-8" href="#eventos">Eventos</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:underline-offset-8" href="#experiencias">Experiências</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:underline-offset-8" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section 1  -->
+  <main class="container">
+    <div
+      class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12">
+      <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt="Floresta" />
+
+      <div
+        class="bg-verde-950/60 flex flex-col items-start gap-2 p-4 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 rounded-xl sm:gap-8 mb-8 sm:bg-verde-950 sm:rounded-full sm:flex-row sm:inline-flex">
+        <p>vagas para dezembro aberta</p>
+        <!-- vagas para dezembro aberta -->
+        <a class="bg-verde-400 text-verde-900 py-2 px-4 rounded-full inline-block" href="">Reserve Hoje</a>
+      </div>
+
+      <h1 class="mb-8 font-serif text-balance text-4xl max-w-screen-sm capitalize sm:text-5xl sm:mb-20">
+        Venha experimentar a vida na floresta
+      </h1>
+
+      <div class="text-sm justify-between items-end sm:flex">
+        <p class="max-sm:mb-4">
+          Melhores locais para visitar
+          <a class="underline decoration-2 underline-offset-4 hover:no-underline" href="./">2049</a>
+        </p>
+
+        <div>
+          <p class="uppercase mb-2">Recomendado por</p>
+          <p class="flex items-center gap-4">
+            <img class="w-28" src="./img/parceiros/wildbeast.svg" alt="Wildbeast" />
+            <span>|</span>
+            Revista Nacional
+          </p>
         </div>
-    </div>    
+      </div>
+    </div>
+  </main>
 
-    <!-- Menu -->
-    <header class="container flex justify-between gap-8 py-8 items-center">
-        <a href="./">
-            <img src="./img/forest.svg" alt="Forest">
-        </a>
-        <nav>
-            <ul class="flex flex-wrap text-white text-xl gap-8">
-                <li><a class="hover:underline hover:underline-offset-8" href="#acomodacoes">Acomodações</a></li>
-                <li><a class="hover:underline hover:underline-offset-8" href="#eventos">Eventos</a></li>
-                <li><a class="hover:underline hover:underline-offset-8" href="#experiencias">Experiências</a></li>
-                <li><a class="hover:underline hover:underline-offset-8" href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Section 2 Acomodações -->
+  <section class="container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16" id="acomodacoes">
+    <!-- List -->
+    <div class="content-end bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain">
+      <h2 class="text-white mb-8 text-4xl font-serif lg:text-5xl">
+        Refugio Natural
+      </h2>
+      <ul class="text-gray-200 *:flex *:items-center *:gap-4 space-y-4 sm:text-xl">
+        <li>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente
+          a natureza de perto
+        </li>
+        <li>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conect-se
+          com a natureza
+        </li>
+        <li>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Desconecte-se do digital
+        </li>
+        <li>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a
+          vida selvagem
+        </li>
+        <li>
+          <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolha a
+          sua cabine preferida
+        </li>
+      </ul>
+    </div>
+    <!-- Images -->
+    <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+      <div class="col-span-full grid *:col-start-1 *:row-start-1">
+        <img class="h-52 w-full object-cover rounded-xl" src="./img/casa1.jpg" alt="Casa 1" />
+        <span
+          class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Ruby</span>
+      </div>
 
-    <!-- Section 1  -->
-    <main class="container ">
-        <div class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12">
-            <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt="Floresta">
-            
-            <div class="bg-verde-950/60 flex flex-col items-start gap-2 p-4 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 rounded-xl  sm:gap-8 mb-8 sm:bg-verde-950 sm:rounded-full sm:flex-row sm:inline-flex">
-                <p>vagas para dezembro aberta</p>
-                <!-- vagas para dezembro aberta -->
-                <a class="bg-verde-400 text-verde-900 py-2 px-4 rounded-full inline-block " href="">Reserve Hoje</a>
+      <div class="grid *:col-start-1 *:row-start-1">
+        <img class="size-full object-cover rounded-xl" src="./img/casa2.jpg" alt="Casa 2" />
+        <span
+          class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Emerald</span>
+      </div>
+
+      <div class="grid *:col-start-1 *:row-start-1">
+        <img class="size-full object-cover rounded-xl" src="./img/casa3.jpg" alt="Casa 3" />
+        <span
+          class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Saphire</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 Eventos -->
+
+  <section id="eventos" class="mb-12 py-12 sm:mb-16  sm:py-16 bg-verde-900">
+    <div class="container">
+      <p class="mb-4 text-center text-verde-300 uppercase tracking-widest text-sm">
+        Conecte-se com a natureza
+      </p>
+
+      <h2 class="mb-8 mx-auto font-serif text-center max-w-screen-md text-balance text-white text-4xl sm:text-6xl">Cada Som, Cada Momento, Uma
+        Nova Descoberta</h2>
+        <div>
+          <div class="flex flex-col">
+            <h3 class="text-verde-300 text-2xl font-serif">Lua Nova</h3>
+            <div class="*:text-white">  
+              <!--  Parou no minuto 5:10 -->
+              <p>23</p>
+              <p>Março 2049</p>
             </div>
+            <p class="text-white">Melhor periodo para observação astronômica. O céu estará claro e as estrelas visivéis</p>
 
-            <h1 class="mb-8 font-serif text-balance text-4xl max-w-screen-sm capitalize sm:text-5xl sm:mb-20">Venha experimentar a vida na floresta</h1>
-            
-            <div class="text-sm justify-between items-end sm:flex">
-                <p class="max-sm:mb-4">Melhores locais para visitar <a class="underline decoration-2 underline-offset-4 hover:no-underline" href="./">2049</a></p>
-                
-                <div >
-                    <p class="uppercase mb-2">Recomendado por</p>
-                    <p class="flex items-center gap-4">
-                        <img class="w-28" src="./img/parceiros/wildbeast.svg" alt="Wildbeast">
-                        <span>|</span>
-                        Revista Nacional
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
-    </main>
-
-    <!-- Section 2 Acomodações -->
-    <section class="container grid lg:grid-cols-[2fr_3fr]  gap-8 pt-16 mb-12 sm:mb-16" id="acomodacoes">
-        <!-- List -->
-        <div class="content-end bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain">
-            <h2 class="text-white mb-8 text-4xl font-serif lg:text-5xl">Refugio Natural</h2>
-            <ul class="text-gray-200 *:flex *:items-center *:gap-4 space-y-4 sm:text-xl"> 
-                <li ><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente a natureza de perto</li>
-                <li ><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conect-se com a natureza</li>
-                <li ><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Desconecte-se do digital</li>
-                <li ><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a vida selvagem</li>
-                <li ><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolha a sua cabine preferida</li>
-            </ul>
-        </div>
-        <!-- Images -->
-        <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
-            <div class="col-span-full grid *:col-start-1 *:row-start-1">
-                <img class="h-52 w-full object-cover rounded-xl" src="./img/casa1.jpg" alt="Casa 1">
-                <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Ruby</span>
-            </div>
-
-            <div class=" grid *:col-start-1 *:row-start-1">
-                <img class="size-full object-cover rounded-xl"  src="./img/casa2.jpg" alt="Casa 2">
-                <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Emerald</span>
-
-            </div>
-            
-            <div class=" grid *:col-start-1 *:row-start-1">
-                <img class="size-full object-cover rounded-xl"  src="./img/casa3.jpg" alt="Casa 3">
-                <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Saphire</span>
-
-            </div>
-        </div>
-    </section>
+    </div>
+  </section>
 </body>
+
 </html>

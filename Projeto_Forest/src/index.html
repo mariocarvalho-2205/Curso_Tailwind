@@ -26,22 +26,33 @@
         <a href="./">
             <img src="./img/forest.svg" alt="Forest" />
         </a>
-        <nav>
-            <ul class="flex flex-wrap text-white text-xl gap-8">
+
+        <nav id="mobile-menu" class="hidden items-center lg:block z-40 max-lg:fixed max-lg:w-full max-lg:inset-0" >
+            <div class="lg:hidden fixed inset-0 bg-verde-950/40 backdrop-blur-md"></div>
+            <ul class="lg:flex lg:flex-wrap max-lg:z-50 max-lg:absolute max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 max-lg:w-full text-white text-2xl lg:text-xl lg:gap-8">
                 <li>
-                    <a class="hover:underline hover:underline-offset-8" href="#acomodacoes">Acomodações</a>
+                    <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#acomodacoes">Acomodações</a>
                 </li>
                 <li>
-                    <a class="hover:underline hover:underline-offset-8" href="#eventos">Eventos</a>
+                    <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#eventos">Eventos</a>
                 </li>
                 <li>
-                    <a class="hover:underline hover:underline-offset-8" href="#experiencias">Experiências</a>
+                    <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#experiencias">Experiências</a>
                 </li>
                 <li>
-                    <a class="hover:underline hover:underline-offset-8" href="#contato">Contato</a>
+                    <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
+
+        <!-- Menu Mobile -->
+        <button id="mobile-button" class="flex items-center gap-3 bg-verde-400 text-verde-900 py-2 px-4 rounded-full inline-block lg:hidden">Menu
+            <span class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-verde-800">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
     </header>
 
     <!-- Section 1  -->
@@ -420,6 +431,22 @@
         </div>
 
     </footer>
+
+    <!-- JavaScript -->
+     <script>
+        const mobileButton = document.getElementById("mobile-button")
+        const mobileMenu = document.getElementById("mobile-menu")
+
+        mobileButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden")
+            mobileMenu.classList.toggle("flex")
+        })
+
+        mobileMenu.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden")
+            mobileMenu.classList.remove("flex")
+        })
+     </script>
 </body>
 
 </html>

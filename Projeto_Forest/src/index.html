@@ -16,7 +16,8 @@
             <div class="flex text-verde-300 divide-x-2 divide-verde-800">
                 <div class="px-4 py-2 capitalize" id="dia">Segunda</div>
                 <div class="px-4 py-2" id="temperatura">25º</div>
-                <div class="px-4 py-2" id="tempo">☀️⛅</div>
+                <div class="px-4 py-2" id="tempo">
+                </div>
             </div>
         </div>
     </div>
@@ -30,16 +31,16 @@
         <nav id="mobile-menu" class="hidden items-center lg:block z-40 max-lg:fixed max-lg:w-full max-lg:inset-0" >
             <div class="lg:hidden fixed inset-0 bg-verde-950/40 backdrop-blur-md"></div>
             <ul class="lg:flex lg:flex-wrap max-lg:z-50 max-lg:absolute max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 max-lg:w-full text-white text-2xl lg:text-xl lg:gap-8">
-                <li>
+                <li class="animate-slide-in opacity-0 animate-1">
                     <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#acomodacoes">Acomodações</a>
                 </li>
-                <li>
+                <li class="animate-slide-in opacity-0 animate-2">
                     <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#eventos">Eventos</a>
                 </li>
-                <li>
+                <li class="animate-slide-in opacity-0 animate-3">
                     <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#experiencias">Experiências</a>
                 </li>
-                <li>
+                <li class="animate-slide-in opacity-0 animate-4">
                     <a class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 p-4 lg:p-0 lg:py-2 block" href="#contato">Contato</a>
                 </li>
             </ul>
@@ -61,6 +62,7 @@
             class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12">
             <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt="Floresta" />
 
+            <video id="video" class="absolute inset-0 size-full object-cover -z-10 animate-fade-in" width="1280" height="720" muted autoplay playsinline loop src="./img/video_chuva.mp4"></video>
             <div
                 class="bg-verde-950/60 flex flex-col items-start gap-2 p-4 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 rounded-xl sm:gap-8 mb-8 sm:bg-verde-950 sm:rounded-full sm:flex-row sm:inline-flex">
                 <p>vagas para dezembro aberta</p>
@@ -434,6 +436,22 @@
 
     <!-- JavaScript -->
      <script>
+        const video = document.getElementById("video")
+        const temperatura = document.getElementById("temperatura")
+        const tempo = document.getElementById("tempo")
+        const dia = document.getElementById("dia")
+
+        const random = Math.floor(Math.random() * 10) + 22;
+
+        temperatura.innerText = `${random}º`
+        tempo.innerText = random < 25 ? `🌧️ ${random + 5}%` : `☀️ ${random + 5}%`
+
+        const date = new Date()
+        dia.innerText = date.toLocaleDateString("pt-BR", {
+            weekday: "long"
+        }).replace("-feira", "")
+
+        video.src = random < 25 ? `./img/video_chuva.mp4` : `./img/video_sol.mp4`
         const mobileButton = document.getElementById("mobile-button")
         const mobileMenu = document.getElementById("mobile-menu")
 
